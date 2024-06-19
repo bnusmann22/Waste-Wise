@@ -1,0 +1,86 @@
+:root{
+  
+  /* Color variables */
+  --color-primary-light: #FEFEFE; 
+  --color-light: #A6A6A6; /*color for the search bar */
+  --color-secondary: #58FF2F;
+
+  /* Font Variables */
+  --font-family:"Montserrat", sans-serif;
+  --font-size-heading: 32px;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  height: 100dvh;
+  background-color: #1E1E1E;
+  
+}
+
+/* General Header styles */
+.header{
+  background-color: #0B1215;
+  color: var(--color-primary-light);
+  height: 75px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 9rem;
+  padding-inline: 120px;
+  z-index: 111;
+}
+
+/* Logo Styles */
+.logo{
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+}
+.lg-green{
+  color: var(--color-secondary);
+}
+/* End of logo styles */
+
+/* Nav links styles */
+.navlinks{
+  display: flex;
+  gap: 20px; 
+  
+}
+
+ul li{
+  list-style-type: none;
+}
+
+ul li a{
+cursor: pointer;
+text-decoration: none;
+color: #ffff;
+font-size: 13px;
+}
+
+ul li a:hover{
+  text-decoration: underline;
+}
+/* End of nav links styles */
+
+#search{
+  position: relative;
+  z-index: 111;
+  cursor: pointer;
+}
+
+#searchTxt{
+  position: absolute;
+  border: none;
+  padding: 6px;
+  margin: -3px 0 0 -25px ;
+  padding-left: 30px;
+  border-radius: 15px;
+}
+
+/* End of header section Styles */
