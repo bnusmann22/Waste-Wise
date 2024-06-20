@@ -133,3 +133,7 @@ ul li a:hover{
   background-color: #ffffff17;
   font-size: var(--font-size-sm);
 }
+button:hover{
+  transform: scale(1.1);
+  transition: all .3s ease-in;
+}
