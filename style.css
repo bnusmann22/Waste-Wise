@@ -8,6 +8,8 @@
   /* Font Variables */
   --font-family:"Montserrat", sans-serif;
   --font-size-heading: 32px;
+  --font-size-semi: 20px;
+  --font-size-sm: 15px;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
 }
@@ -16,11 +18,20 @@ body{
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  height: 100dvh;
-  background-color: #1E1E1E;
   
 }
 
+.hero-section{
+  background-image: url(/IMAGES/Hero-img2.jpg);
+  background-position: ;
+  background-size: cover;
+  width: fill;
+  height: 100dvh;
+}
+
+.overlay{
+
+}
 /* General Header styles */
 .header{
   background-color: #0B1215;
@@ -40,7 +51,7 @@ body{
   font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
-.lg-green{
+#lg-green{
   color: var(--color-secondary);
 }
 /* End of logo styles */
@@ -84,3 +95,43 @@ ul li a:hover{
 }
 
 /* End of header section Styles */
+
+/* Overlay Section */
+.desc{
+  width: 36rem;
+  padding: 15px;
+  position: relative;
+  top: 10.5rem;
+  left: 7.5rem;
+  background: #ffff;
+}
+
+.hero-txt{
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+#txt-sm{
+  font-size: var(--font-size-semi);
+  font-weight: var(--font-weight-normal);
+}
+
+.btn{
+  padding: 5px;
+  display: flex;
+  gap: 15px;
+}
+
+#gbtn{
+  border: none;
+  padding: 15px;
+  color: var(--color-primary-light);
+  background-color: var(--color-secondary);
+  font-size: var(--font-size-sm);
+}
+#ibtn{
+  border: 1px solid black;
+  padding: 15px;
+  background-color: var(--color-primary-light);
+  font-size: var(--font-size-sm);
+}
