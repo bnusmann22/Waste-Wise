@@ -23,15 +23,13 @@ body{
 
 .hero-section{
   background-image: url(/IMAGES/Hero-img2.jpg);
-  background-position: ;
   background-size: cover;
   width: fill;
   height: 100dvh;
 }
 
-.overlay{
 
-}
+
 /* General Header styles */
 .header{
   background-color: #0B1215;
@@ -96,14 +94,14 @@ ul li a:hover{
 
 /* End of header section Styles */
 
-/* Overlay Section */
+/* desc Section */
 .desc{
   width: 36rem;
   padding: 15px;
   position: relative;
-  top: 10.5rem;
+  top: 10rem;
   left: 7.5rem;
-  background: #ffff;
+  background: #ffffff44;
 }
 
 .hero-txt{
@@ -132,6 +130,6 @@ ul li a:hover{
 #ibtn{
   border: 1px solid black;
   padding: 15px;
-  background-color: var(--color-primary-light);
+  background-color: #ffffff17;
   font-size: var(--font-size-sm);
 }
