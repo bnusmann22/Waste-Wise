@@ -1,52 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waste Wise</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waste Wise</title>
 
-  <!-- Fonts import -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- End of fonts import -->
+    <!-- Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of fonts import -->
 
-  <!-- Style sheet -->
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <!-- Header section -->
+      <div class="header">
+        <div class="logo"><span id="lg-green">Waste</span>Wise</div>
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
 
-  <!-- Hero Section -->
-  <div class="hero-section">
-    <!-- Header section -->
-    <div class="header">
-      <div class="logo"><span id="lg-green">Waste</span>Wise</div>
-      <ul class="navlinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-
-      <div class="search">
-        <img src="/IMAGES/Notification Icon.png" alt="Notification" style="cursor: pointer;">
-        <img src="/IMAGES/material-symbols_search.png" alt="Notification" id="search">
-        <input type="text" name="text" id="searchTxt" >
+        <div class="search">
+          <img
+            src="/IMAGES/Notification Icon.png"
+            alt="Notification"
+            style="cursor: pointer"
+          />
+          <img
+            src="/IMAGES/material-symbols_search.png"
+            alt="Notification"
+            id="search"
+          />
+          <input type="text" name="text" id="searchTxt" />
+        </div>
+      </div>
+      <!-- End of header section -->
+      <div class="desc">
+        <div class="hero-txt">
+          <span id="txt-sm">Manage waste with ease</span> <br />
+          <span id="lg-green">WasteWise</span> Lagos Mainland's Leading Waste
+          Management App for Efficient and sustainable solutions
+        </div>
+        <div class="btn">
+          <button id="gbtn">Explore our services</button>
+          <button id="ibtn">Contact Us</button>
+        </div>
       </div>
     </div>
-    <!-- End of header section -->
-    <div class="desc">
-      <div class="hero-txt">
-        <span id="txt-sm">Manage waste with ease</span> <br>
-        <span id="lg-green">WasteWise</span> Lagos Mainland's Leading Waste Management App for Efficient and sustainable solutions
+    <!--End of Hero Section-->
+    <div class="services">
+      <div class="servicespadding">
+        <!--First Column-->
+        <div class="WCS-txt">
+          <span id="txt-WCS">Waste Collection Schedule</span> <br />
+          <span id="WCS-sub"
+            >Regular waste collection is essential to maintain a clean <br />
+            and healthy environment. To ensure efficient waste <br />
+            management, please note the following collection <br />
+            scheme.....
+          </span>
+          <div class="1subbtn">
+            <button id="btn1">Read more</button>
+          </div>
+          <div class="WCSimg">
+            <img src="WCSimg.png" />
+          </div>
+        </div>
+
+        <!--Second Column-->
+        <div class="RC-txt">
+          <span id="txt-RC">Recycling Center</span> <br />
+          <span id="RC-sub"
+            >Our facility accepts a wide range of recyclable materials
+            <br />including: <br />
+            <br />Paper and Cardboard <br />Plastic Bottles and Containers
+            <br />Glass Bottles and Jars <br />MetalCans and Foil
+            <br />Electronic Waste(E-Waste)
+          </span>
+          <div class="2subbtn">
+            <button id="btn2">Read more</button>
+          </div>
+          <div class="RCimg">
+            <img src="RCimpng" />
+          </div>
+        </div>
+        <!--Third Column-->
+        <div class="WSG-txt">
+          <span id="txt-WSG">Waste Sorting Guide</span> <br />
+          <span id="WSG-sub"
+            >Proper waste sorting is crucial for a sustainable future! To sort
+            your waste correctly, remember to: <br />
+            Separate organic waste from recyclables and general <br />
+            waste <br />
+            Rinse containers and remove lids and labels <br />
+            Sort materials by type<br />
+            Place items in the correct bins
+          </span>
+          <div class="3subbtn">
+            <button id="btn3">Read more</button>
+          </div>
+          <div class="WSGimg">
+            <img src="WSpng" />
+          </div>
+        </div>
       </div>
-      <div class="btn">
-        <button id="gbtn">Explore our services</button>
-        <button id="ibtn">Contact Us</button>
-      </div>
-      
     </div>
-  </div>
-</body>
+  </body>
 </html>
