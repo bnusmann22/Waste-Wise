@@ -18,18 +18,30 @@ body{
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  
+  background-color: #1E1E1E;
 }
 
 .hero-section{
-  background-image: url(/IMAGES/Hero-img2.jpg);
+  background-image: url(/IMAGES/main-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  min-height: 120dvh;
+  
 }
 
 
+/* Hint of Styles for section to be done by +rytt */
+
+/* .overlay{
+  position: relative;
+  height: 40rem; 
+  margin-inline: 130px;
+  background-color: #A6A6A6;
+  top: -50px;
+} */
+
+/* End of scetion */
 
 /* General Header styles */
 .header{
@@ -42,13 +54,23 @@ body{
   gap: 9rem;
   padding-inline: 120px;
   z-index: 111;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 2px 3px 5px #333;
 }
+
+/* Mobile hidden style */
+.mbl__header{
+  display: none;
+}
+/* End of mobile hidden style */
 
 /* Logo Styles */
 .logo{
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
+  color: var(--color-primary-light);
 }
 #lg-green{
   color: var(--color-secondary);
@@ -100,10 +122,23 @@ ul li a:hover{
   width: 36rem;
   padding: 15px;
   position: relative;
-  top: 10rem;
+  top: 15.5rem;
   left: 7.5rem;
   background: #ffffff44;
+  animation: leftIn 1.5s ease 1 none;
 }
+
+/* Animations  */
+
+@keyframes leftIn {
+  from{
+    transform: translateX(-500px);
+  } to{
+    transform: translateX(0);
+  }
+}
+
+/* End of animation */
 
 .hero-txt{
   font-size: var(--font-size-heading);
@@ -125,7 +160,7 @@ ul li a:hover{
   border: none;
   padding: 15px;
   color: var(--color-primary-light);
-  background-color: var(--color-secondary);
+  background-color: green;
   font-size: var(--font-size-sm);
 }
 #ibtn{

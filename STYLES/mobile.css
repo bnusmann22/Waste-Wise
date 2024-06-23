@@ -1,0 +1,39 @@
+@media (max-width: 420px){
+  .hero-section{
+    width: 420px;
+    min-height: 180px;
+    background-image: url(/IMAGES/main-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header{
+    display: none;
+  }
+
+  .mbl__header{
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    gap: 25px;
+    padding: 6px 20px;
+    background-color: #0B1215;
+  }
+  .mbl__menu > img{
+    width: 25px;
+    height: 25px;
+    margin-right: ;
+    /* position: fixed;
+    z-index: 111; */
+  }
+  .mbl__head{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+  }
+
+  .mbl__head .logo{
+    font-size: 20px;
+  }
+}
