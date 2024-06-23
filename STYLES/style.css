@@ -47,7 +47,7 @@ body{
 .header{
   background-color: #0B1215;
   color: var(--color-primary-light);
-  height: 75px;
+  height: 60px;
   display: flex;
   justify-content: baseline;
   align-items: center;
@@ -61,6 +61,10 @@ body{
 
 /* Mobile hidden style */
 .mbl__header{
+  display: none;
+}
+
+.mbl__test{
   display: none;
 }
 /* End of mobile hidden style */

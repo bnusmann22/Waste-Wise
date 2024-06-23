@@ -1,11 +1,64 @@
 @media (max-width: 420px){
   .hero-section{
-    width: 420px;
-    min-height: 180px;
-    background-image: url(/IMAGES/main-bg.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 75dvh;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    /* background-position: center; */
+  }
+  
+  .desc{
+    width: 350px;
+    padding:  0px;
+    margin: 0 15px;
+    position: relative;
+    top: 200px;
+    left: 0;
+    background: #ffffff44;
+    animation: none;
+    text-align: center;
+  }
+
+  .hero-txt{
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+  }
+  
+  #txt-sm{
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+
+  }
+  
+  .btn{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .btn > button{
+    width: 220px;
+  }
+  .btn > #ibtn{
+    width: 150px;
+  }
+  #gbtn{
+    border: none;
+    padding: 15px;
+    color: var(--color-primary-light);
+    background-color: green;
+    font-size: var(--font-size-sm);
+  }
+  #ibtn{
+    border: 2px solid black;
+    padding: 15px;
+    background-color: #ffffff17;
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+  }
+  button:hover{
+    transform: scale(1);
+    transition: all .3s ease-in;
   }
   
   .header{
@@ -13,27 +66,37 @@
   }
 
   .mbl__header{
-    width: 100%;
     display: flex;
-    justify-content: baseline;
-    gap: 25px;
+    justify-content: first baseline;
+    gap: 15px;
     padding: 6px 20px;
     background-color: #0B1215;
+    position: fixed;
+    width: 100%;
+    z-index: 111;
   }
-  .mbl__menu > img{
+  .mbl__menu > img , .mbl__head > img{
     width: 25px;
     height: 25px;
-    margin-right: ;
-    /* position: fixed;
-    z-index: 111; */
+    /*  */
   }
   .mbl__head{
+    width: 100%;
+    padding-top: 2px;
+    padding-right: 50px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
   }
 
   .mbl__head .logo{
     font-size: 20px;
   }
+
+  /* A demo to test the fixation of the header */
+  .mbl__test{
+    display: block;
+    height: 2900px;
+    border: 2px solid red;
+  }
+  /* End of demo */
 }
