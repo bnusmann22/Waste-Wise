@@ -30,6 +30,14 @@
     }
   }
   
+  @keyframes topIn {
+    from{
+      transform: translatey(-200px);
+    } to{
+      transform: translatey(0);
+    }
+  }
+  
   /* End of animation */
   
 
@@ -88,6 +96,7 @@
     position: fixed;
     width: 100%;
     z-index: 111;
+    animation: topIn 1.5s ease 1 none;
   }
   .mbl__menu > img , .mbl__head > img{
     width: 25px;
