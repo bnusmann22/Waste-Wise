@@ -1,6 +1,6 @@
 @media (max-width: 420px){
   .hero-section{
-    min-height: 75dvh;
+    min-height: 85dvh;
     overflow: hidden;
     width: 100%;
     background-size: cover;
@@ -8,7 +8,7 @@
   }
   
   .desc{
-    width: 350px;
+    width: 300px;
     padding:  0px;
     margin: 0 15px;
     position: relative;
@@ -17,7 +17,21 @@
     background: #ffffff44;
     animation: none;
     text-align: center;
+    animation: leftIn 1.5s ease 1 none;
   }
+  
+  /* Animations  */
+  
+  @keyframes leftIn {
+    from{
+      transform: translateX(-250px);
+    } to{
+      transform: translateX(0);
+    }
+  }
+  
+  /* End of animation */
+  
 
   .hero-txt{
     font-size: 20px;
