@@ -1,88 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waste Wise</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waste Wise</title>
 
-  <!-- Fonts import -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <!-- End of fonts import -->
+    <!-- Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of fonts import -->
 
-  <!-- Style sheet -->
-   <link rel="stylesheet" href="/STYLES/style.css">
-   <link rel="stylesheet" href="/STYLES/mobile.css">
-</head>
-<body>
-
-  <!-- Hero Section -->
-  <div class="hero-section">
-
-    <!-- Mobile Design -->
-    <div class="mbl__header">
-      <div class="mbl__menu">
-        <img src="/IMAGES/Menu.png" alt="mbl__menu">
-      </div>
-
-      <div class="mbl__head" style="cursor: pointer;">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <!-- Header section -->
+      <div class="header">
         <div class="logo"><span id="lg-green">Waste</span>Wise</div>
-        <img src="/IMAGES/Notification Icon.png" alt="Notification" >
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+
+        <div class="search">
+          <img
+            src="/IMAGES/Notification Icon.png"
+            alt="Notification"
+            style="cursor: pointer"
+          />
+          <img
+            src="/IMAGES/material-symbols_search.png"
+            alt="Notification"
+            id="search"
+          />
+          <input type="text" name="text" id="searchTxt" />
+        </div>
+      </div>
+      <!-- End of header section -->
+      <div class="desc">
+        <div class="hero-txt">
+          <span id="txt-sm">Manage waste with ease</span> <br />
+          <span id="lg-green">WasteWise</span> Lagos Mainland's Leading Waste
+          Management App for Efficient and sustainable solutions
+        </div>
+        <div class="btn">
+          <button id="gbtn">Explore our services</button>
+          <button id="ibtn">Contact Us</button>
+        </div>
       </div>
     </div>
-    <!-- End of mobile design -->
-
-    <!-- Header section -->
-    <div class="header">
-      <div class="logo"><span id="lg-green">Waste</span>Wise</div>
-      <ul class="navlinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-
-      <div class="search">
-        <img src="/IMAGES/Notification Icon.png" alt="Notification" style="cursor: pointer;">
-        <img src="/IMAGES/material-symbols_search.png" alt="Notification" id="search">
-        <input type="text" name="text" id="searchTxt" >
+    <!--Overlay section-->
+    <div class="overlay">
+      <div class="schedule contain">
+        <div class="overlay-txt">
+          <h2 class="overlay-header">Waste Collection Schedule</h2>
+          <p class="overlay-body">
+            Regular waste collection is essential to maintain a clean and
+            healthy environment. To ensure efficient waste management, please
+            note the following collection scheme...
+          </p>
+          <button class="overlay-btn">Read More</button>
+        </div>
+        <div class="overlay-img">
+          <img src="/IMAGES/Schedule-img.png" />
+        </div>
+      </div>
+      <div class="recycling contain">
+        <div class="overlay-img">
+          <img src="/IMAGES/recycling-img.png" />
+        </div>
+        <div class="overlay-txt">
+          <h2 class="overlay-header">Recycling Center</h2>
+          <p class="overlay-body">
+            Our facility accepts a wide range of recyclable materials,
+            including: Paper and Cardboard Plastic Bottles and Containers Glass
+            Bottles and Jars Metal Cans and Foil Electronic Waste (E-Waste)
+          </p>
+          <button class="overlay-btn">Read More</button>
+        </div>
+      </div>
+      <div class="sorting contain">
+        <div class="overlay-txt">
+          <h2 class="overlay-header">Waste Sorting Guide</h2>
+          <p class="overlay-body">
+            Proper waste sorting is crucial for a sustainable future! To sort
+            your waste correctly, remember to:<br />
+            <br />
+            Separate organic waste from recyclables and general waste<br />
+            Rinse containers and remove lids and labels<br />
+            Sort materials by type<br />
+            Place items in the correct bins
+          </p>
+          <button class="overlay-btn">Read More</button>
+        </div>
+        <div class="overlay-img">
+          <img src="/IMAGES/sorting-img.png" />
+        </div>
       </div>
     </div>
-    <!-- End of header section -->
-    <div class="desc">
-      <div class="hero-txt">
-        <span id="txt-sm">Manage waste with ease</span> <br>
-        <span id="lg-green">WasteWise</span> Lagos Mainland's Leading Waste Management App for Efficient and sustainable solutions
+
+    <!-- Footer Section -->
+    <!---- <div class = "footer">
+    <div class ="footer-left">
+      
+      <h3>Latest News <span><h5 id="view">View All News</h5></span></h3>
+      <div class="article1">
+      <p id="date">Saturday 27th May, 2024</p>
+      <p>Keep residents informed about local waste management initiatives</p>
+      <a href="dummy.html">Read Article</a>
+      <hr />
       </div>
-      <div class="btn">
-        <button id="gbtn">Explore our services</button>
-        <button id="ibtn">Contact Us</button>
+      <div class="article2">
+      <p id="date">Saturday 27th May, 2024</p>
+      <p>Updates on new recycling programmes or changes in collection schedule</p>
+      <a href="dummy.html">Read Article</a>
+      <hr />
       </div>
     </div>
-  </div>
-
-  <!-- HInt of Section to be done by +rytt -->
-
-  <!-- <div class="overlay">
-    <div class="schedule">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat nulla distinctio vel iste quasi dolorum quaerat provident id tenetur aperiam, repellat,</p>
-      <img src="/IMAGES/Schedule-img.png" alt="">
+    <div class ="footer-right">
+      <h3>Sign Up For Our Newsletter</h3>
+      <div class="wrapper">
+      <input type="text" required>
+      <label>First Name</label>
+      <input type="text" required>
+      <label>Last Name</label>
+      <input type="text" required>
+      <label>Email</label>
+      <div class="button">
+      <input type="button" value="Sign Up">
+      </div>
     </div>
-    <div class="recycling">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat nulla distinctio vel iste quasi dolorum quaerat provident id tenetur aperiam, repellat,</p>
-      <img src="/IMAGES/recycling-img.png" alt="">
-    </div>
-    <div class="sorting">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat nulla distinctio vel iste quasi dolorum quaerat provident id tenetur aperiam, repellat,</p>
-      <img src="/IMAGES/sorting-img.png" alt="">
-    </div>
-  </div> -->
-
-  <!-- End of section -->
-  <div class="mbl__test">
-    heyy
-  </div>
-</body>
+  </div>-->
+  </body>
 </html>
