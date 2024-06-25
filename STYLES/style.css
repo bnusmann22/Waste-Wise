@@ -177,3 +177,34 @@ button:hover{
   transform: scale(1.1);
   transition: all .3s ease-in;
 }
+
+/* Start of Middle section Styles */
+.overlay{
+  background-color: #141111;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  margin-inline: 130px;
+  top: -50px;
+  padding: 60px 120px;
+
+}
+.overlay-txt{
+padding: 80px 20px;
+color: #FFFFFF;
+}
+.overlay-body{
+color: #FFFDFD;
+}
+.contain{
+display: flex;
+}
+.overlay-btn{
+background-color: #209503;
+color: #FFFFFF;
+height: 40px;
+width: 120px;
+border: none;
+font-size: 16px;
+}
