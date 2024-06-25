@@ -208,3 +208,12 @@ button:hover{
   border: none;
   font-size: 16px;
 }
+.bot-img > img{
+  width: 149px;
+  height: 140px;
+  display: block;
+  position: absolute;
+  bottom: -2.7%;
+  left: 92%;
+
+}
