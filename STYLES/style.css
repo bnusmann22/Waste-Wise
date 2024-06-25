@@ -208,3 +208,10 @@ button:hover{
   border: none;
   font-size: 16px;
 }
+
+.bot-img > img{
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  top: -50px;
+}
