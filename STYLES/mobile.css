@@ -98,10 +98,10 @@
     z-index: 111;
     animation: topIn 1.5s ease 1 none;
   }
+  
   .mbl__menu > img , .mbl__head > img{
     width: 25px;
     height: 25px;
-    /*  */
   }
   .mbl__head{
     width: 100%;

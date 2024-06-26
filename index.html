@@ -23,6 +23,19 @@
     <div class="hero-section">
       <!-- Header section -->
       <div class="header">
+        <!-- Mobile Design -->
+        <div class="mbl__header">
+          <div class="mbl__menu">
+            <img src="/IMAGES/Menu.png" alt="mbl__menu" />
+          </div>
+
+          <div class="mbl__head" style="cursor: pointer">
+            <div class="logo"><span id="lg-green">Waste</span>Wise</div>
+            <img src="/IMAGES/Notification Icon.png" alt="Notification" />
+          </div>
+        </div>
+        <!-- End of mobile design -->
+
         <div class="logo"><span id="lg-green">Waste</span>Wise</div>
         <ul class="navlinks">
           <li><a href="#">Home</a></li>
@@ -36,7 +49,12 @@
           <img
             src="/IMAGES/Notification Icon.png"
             alt="Notification"
-            style="cursor: pointer"
+            style="
+              cursor: pointer;
+              width: 24px;
+              height: 24px;
+              padding-right: 10px;
+            "
           />
           <img
             src="/IMAGES/material-symbols_search.png"
@@ -74,6 +92,9 @@
         <div class="overlay-img">
           <img src="/IMAGES/Schedule-img.png" />
         </div>
+        <div class="bot-img">
+          <img src="/IMAGES/bot-image.png" />
+        </div>
       </div>
       <div class="recycling contain">
         <div class="overlay-img">
@@ -106,8 +127,51 @@
         <div class="overlay-img">
           <img src="/IMAGES/sorting-img.png" />
         </div>
-        <div class="bot-img">
-          <img src="/IMAGES/bot-image.png" />
+      </div>
+    </div>
+
+    <!-- End of section -->
+    <div class="mbl__test">heyy</div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="footer-left">
+        <h3>
+          Latest News <span><h5 id="view">View All News</h5></span>
+        </h3>
+        <div class="article1">
+          <p id="date">Saturday 27th May, 2024</p>
+          <p>
+            Keep residents informed about local waste management initiatives
+          </p>
+          <a href="#">Read Article</a>
+          <hr />
+        </div>
+
+        <div class="article2">
+          <p id="date">Saturday 27th May, 2024</p>
+          <p>
+            Updates on new recycling programmes or changes in collection
+            schedule
+          </p>
+          <a href="#">Read Article</a>
+          <hr />
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h3>Sign Up For Our Newsletter</h3>
+        <div class="wrapper">
+          <input type="text" required />
+          <label>First Name</label>
+          <input type="text" required />
+          <label>Last Name</label>
+          <input type="text" required />
+          <label>Email</label>
+
+          <div class="footer-button">
+            <input type="button" value="Sign Up" />
+          </div>
         </div>
       </div>
     </div>
