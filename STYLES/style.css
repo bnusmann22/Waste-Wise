@@ -18,7 +18,8 @@ body{
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  background-color: #1E1E1E;
+  background-color: #000000;
+  height: 100vh;
 }
 
 .hero-section{
@@ -215,5 +216,7 @@ button:hover{
   position: absolute;
   bottom: -2.7%;
   left: 92%;
-
 }
+
+/* Start of footer section styles */
+
