@@ -148,6 +148,7 @@ input{
 
 #desc.modified{
   top: 0rem;
+  position: relative;
 }
 
 @keyframes shake{
@@ -177,7 +178,8 @@ input{
   padding: 15px;
   position: sticky;
   top: 4.5rem;
-  left: 72%;
+  left: 68%;
+  z-index: 100;
   display: none;
   border-radius: 10px;
   background: transparent;
@@ -295,7 +297,7 @@ button:hover{
 
 /* Footer Section */
 
-.footer{
+/* .footer{
   display: flex;
   padding-inline: 80px;
   border: 1px solid red;
@@ -309,4 +311,91 @@ border: 1px solid green;
 
 .footer-right{
    border: 1px solid cyan;
+} */
+
+/* Footer section */
+
+.footer{
+  display: flex;
+  background-color: #000000;
+  color: var(--color-primary-light);
+  position: relative;
+  height: 360px;
+  justify-content: baseline;
+  padding: 30px 120px;
+}
+.footer-right{
+  width: 450px;
+  padding: 30px;
+}
+.footer-right h3{
+  margin-top: -10px;
+}
+.footer-right .wrapper{
+  height: 40px;
+  width:100%;
+  position: relative;
+}
+.footer-right .wrapper input{
+  height: 100%;
+  width: 100%;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+  color: var(--color-primary-light);
+  background-color: #000000;
+}
+input:valid + label
+{
+  display: none;
+}
+.footer-right, .wrapper, label{
+  position: relative;
+  bottom: 30px;
+  left:0;
+  color: grey;
+}
+.wrapper{
+  padding-top: 50px;
+}
+
+
+#footer-btn > button{
+  background-color: green;
+  color: orange;
+  text-align: center;
+  border-radius: 5px;
+  width: 450px;
+}
+
+.article1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.article1 #date, .article2 #date{
+  color: grey;
+  font-size: x-small;
+}
+.article1 a, .article2 a,
+.article1 a:visited, .article2 a:visited{
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: small;
+}
+ 
+#view{
+  position: relative;
+  display: inline;
+  margin-left: 100px;
+  color: var(--color-secondary);
+}
+.footer-right .wrapper .underline{
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  border: 1px solid green;
+}
+h5{
+  font-weight: 500;
 }
