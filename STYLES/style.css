@@ -161,22 +161,53 @@ input{
   animation: shake 0.5s;
 }
 
+.green{
+  fill: var(--color-secondary);
+}
+
+.white{
+  fill: white;
+}
+
 /* End of JS manipulations */
 
 #ntf-txt{
   width: 12rem;
   height: 15rem;
   padding: 15px;
-  position: relative;
+  position: sticky;
   top: 4.5rem;
-  left: 69%;
-  z-index: 111;
+  left: 72%;
   display: none;
   border-radius: 10px;
   background: transparent;
   border: 1px solid red;
   backdrop-filter: blur(15px);
+  overflow-y: scroll;
+  transition: all 2s ease-in;
 }
+
+/* Notification scrool bar styles */
+#ntf-txt::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+#ntf-txt:hover::-webkit-scrollbar{
+  width: 9px;
+}
+
+
+#ntf-txt::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+#ntf-txt::-webkit-scrollbar-thumb:hover{
+  background: #555;
+}
+/* End of scroll bar */
 
 /* Animations  */
 
