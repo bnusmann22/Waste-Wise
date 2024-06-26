@@ -51,17 +51,23 @@
             src="/IMAGES/Notification Icon.png"
             alt="Notification"
             style="cursor: pointer; width: 24px; height: 24px; padding-right: 10px;"
+            id="ntf-show"
           />
           <img
             src="/IMAGES/material-symbols_search.png"
             alt="Notification"
             id="search"
           />
-          <input type="text" name="text" id="searchTxt" />
+          <input type="text" name="text" id="input" />
         </div>
       </div>
       <!-- End of header section -->
-      <div class="desc">
+
+       <!-- Notification pane  -->
+      <div id="ntf-txt"> hello world</div>
+      <!-- End of notification pane-->
+       
+      <div id="desc">
         <div class="hero-txt">
           <span id="txt-sm">Manage waste with ease</span> <br />
           <span id="lg-green">WasteWise</span> Lagos Mainland's Leading Waste
@@ -73,6 +79,7 @@
         </div>
       </div>
     </div>
+
     <!--Overlay section-->
     <div class="overlay">
       <div class="schedule contain">
@@ -132,7 +139,7 @@
   </div>
 
     <!-- Footer Section -->
-    <!-- <div class="footer">
+    <div class="footer">
       <div class="footer-left">
         <h3>
           Latest News <span><h5 id="view">View All News</h5></span>
@@ -160,7 +167,7 @@
       <div class="footer-right">
         <h3>Sign Up For Our Newsletter</h3>
         <div class="wrapper">
-          <input type="text" required />
+          <input type="text" required  />
           <label>First Name</label>
           <input type="text" required />
           <label>Last Name</label>
@@ -172,6 +179,9 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <!-- JS links -->
+     <script src="script.js"></script>
   </body>
 </html>

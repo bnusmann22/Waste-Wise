@@ -110,26 +110,72 @@ ul li a:hover{
   cursor: pointer;
 }
 
-#searchTxt{
+#input{
   position: absolute;
   border: none;
   padding: 6px;
+  
   margin: -3px 0 0 -25px ;
   padding-left: 30px;
   border-radius: 15px;
+  
+}
+
+input{
+  border-radius: 15px;
+  border: none;
+  padding: 6px;
 }
 
 /* End of header section Styles */
 
 /* desc Section */
-.desc{
-  width: 36rem;
+#desc{
+  width: 50rem;
   padding: 15px;
   position: relative;
-  top: 15.5rem;
+  top: 17rem;
   left: 7.5rem;
   background: #ffffff44;
+  backdrop-filter: blur(2px);
   animation: leftIn 1.5s ease 1 none;
+}
+
+/* JS manipulations */
+#ntf-txt.show{
+  display: block;
+}
+
+#desc.modified{
+  top: 0rem;
+}
+
+@keyframes shake{
+  0%, 100%{transform: translateX(0);}
+  25% {transform: translateX(-5px);}
+  50% {transform: translateX(5px);}
+  75% {transform: translateX(-5px);}
+}
+
+.shake{
+  animation: shake 0.5s;
+}
+
+/* End of JS manipulations */
+
+#ntf-txt{
+  width: 12rem;
+  height: 15rem;
+  padding: 15px;
+  position: relative;
+  top: 4.5rem;
+  left: 69%;
+  z-index: 111;
+  display: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid red;
+  backdrop-filter: blur(15px);
 }
 
 /* Animations  */
@@ -214,4 +260,22 @@ button:hover{
   height: 95px;
   position: absolute;
   top: -50px;
+}
+
+/* Footer Section */
+
+.footer{
+  display: flex;
+  padding-inline: 80px;
+  border: 1px solid red;
+ 
+  
+}
+
+.footer-left{
+border: 1px solid green;
+}
+
+.footer-right{
+   border: 1px solid cyan;
 }
