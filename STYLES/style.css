@@ -399,7 +399,13 @@ border: 1px solid green;
 
 #view{
   margin-left: 100px;
+  color: blue;
+  text-decoration: none;
+}
+
+#view:hover{
   color: var(--color-secondary);
+  text-decoration: underline;
 }
 
 .team{
@@ -414,8 +420,8 @@ border: 1px solid green;
 }
 
 .team > img {
-  height: 45px;
-  width: 45px;
+  height: 38px;
+  width: 38px;
   border-radius: 50%;
 }
 
