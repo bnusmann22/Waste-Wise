@@ -360,10 +360,15 @@ border: 1px solid green;
 /* End of input */
 #footer-btn > button{
   background-color: green;
-  color: orange;
+  color: white;
   text-align: center;
+  font-size: 20px;
   border-radius: 5px;
   width: 450px;
+}
+#footer-btn > button:hover{
+  transform: none;
+  animation: shake 0.5s;
 }
 
 .article1 > a , .article2  > a {
