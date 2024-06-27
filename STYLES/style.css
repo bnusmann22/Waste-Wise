@@ -383,6 +383,10 @@ border: 1px solid green;
  overflow-y: scroll;
 }
 
+.article > div:hover{
+  background-color: #555;
+}
+
 #date{
   font-size: x-small;
   margin: 0;
@@ -415,6 +419,7 @@ border: 1px solid green;
   font-weight: var(--font-weight-bold);
   color: red;
 }
+
 
 .article::-webkit-scrollbar{
   width: 0px;
