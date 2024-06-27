@@ -139,6 +139,7 @@ input{
   background: #ffffff44;
   backdrop-filter: blur(2px);
   animation: leftIn 1.5s ease 1 none;
+  border-radius: 24px;
 }
 
 /* JS manipulations */
