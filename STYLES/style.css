@@ -111,27 +111,107 @@ ul li a:hover{
   cursor: pointer;
 }
 
-#searchTxt{
+#input{
   position: absolute;
   border: none;
   padding: 6px;
+  
   margin: -3px 0 0 -25px ;
   padding-left: 30px;
   border-radius: 15px;
+  
+}
+
+input{
+  border-radius: 15px;
+  border: none;
+  padding: 6px;
 }
 
 /* End of header section Styles */
 
 /* desc Section */
-.desc{
-  width: 36rem;
+#desc{
+  width: 50rem;
   padding: 15px;
-  position: relative;
-  top: 15.5rem;
+  position: absolute;
+  top: 17rem;
   left: 7.5rem;
   background: #ffffff44;
+  backdrop-filter: blur(2px);
   animation: leftIn 1.5s ease 1 none;
+  border-radius: 24px;
 }
+
+/* JS manipulations */
+#ntf-txt.show{
+  display: block;
+}
+
+/* #desc.modified{
+  top: 0rem;
+  position: relative;
+} */
+
+@keyframes shake{
+  0%, 100%{transform: translateX(0);}
+  25% {transform: translateX(-5px);}
+  50% {transform: translateX(5px);}
+  75% {transform: translateX(-5px);}
+}
+
+.shake{
+  animation: shake 0.5s;
+}
+
+.green{
+  fill: var(--color-secondary);
+}
+
+.white{
+  fill: white;
+}
+
+/* End of JS manipulations */
+
+#ntf-txt{
+  width: 12rem;
+  height: 15rem;
+  padding: 15px;
+  position: sticky;
+  top: 4.5rem;
+  left: 68%;
+  z-index: 100;
+  display: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid red;
+  backdrop-filter: blur(15px);
+  overflow-y: scroll;
+  transition: all 2s ease-in;
+}
+
+/* Notification scrool bar styles */
+#ntf-txt::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+#ntf-txt:hover::-webkit-scrollbar{
+  width: 9px;
+}
+
+
+#ntf-txt::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+#ntf-txt::-webkit-scrollbar-thumb:hover{
+  background: #555;
+}
+/* End of scroll bar */
 
 /* Animations  */
 
@@ -175,6 +255,7 @@ ul li a:hover{
   font-size: var(--font-size-sm);
 }
 button:hover{
+  cursor: pointer;
   transform: scale(1.1);
   transition: all .3s ease-in;
 }
@@ -187,9 +268,8 @@ button:hover{
   gap: 20px;
   position: relative;
   margin-inline: 100px;
-  top: -50px;
+  top: -70px;
   padding: 30px 45px;
-
   }
 .overlay-txt{
   padding: 80px 20px;
@@ -217,99 +297,159 @@ button:hover{
   top: -50px;
 }
 
+/* Footer Section */
+
+/* .footer{
+  display: flex;
+  padding-inline: 80px;
+  border: 1px solid red;
+ 
+  
+}
+
+.footer-left{
+border: 1px solid green;
+}
+
+.footer-right{
+   border: 1px solid cyan;
+} */
 
 /* Footer section */
+
 .footer{
   display: flex;
   background-color: #000000;
   color: var(--color-primary-light);
-  position: relative;
   height: 360px;
-  width:100%;
-  bottom: 0px;
-  justify-content: baseline;
-  padding-inline: 120px;
-  padding-bottom: 50px;
-  font-family: var(--font-family);
+  padding: 30px 120px;
 }
-
 .footer-right{
-  width: 450px;
   padding: 30px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.footer-right h3{
-  margin-top: -10px;
+/* Input */
+.input-boxes{
+  margin-top: 30px;  
 }
 
-.footer-right .wrapper{
-  height: 40px;
-  width:100%;
+.input-boxes .input-box{
+  height: 50px;
+  width: 90%;
+  margin: 10px 0;
   position: relative;
 }
 
-.footer-right .wrapper input{
+.input-box > input{
   height: 100%;
   width: 100%;
-  border: none;
-  border-style: none;
-  border-width: 0;
   outline: none;
-  box-shadow: none;
-  font-size: 17px;
-  border-bottom: 2px solid silver;
-  color: var(--color-primary-light);
-  background-color: #000000;
+  border: none;
+  border-radius: 0px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  transition: all 0.3s ease;
 }
 
-input:valid + label
-{
-  display: none;
-}
-
-.footer-right .wrapper label{
-  position: relative;
-  bottom: 30px;
-  left:0;
-  color: grey;
-}
-
+.input-box input:focus,
+.input-box input:valid{
+  border-color: var(--color-secondary);
+} 
+/* End of input */
 #footer-btn > button{
   background-color: green;
+  color: white;
   text-align: center;
+  font-size: 20px;
   border-radius: 5px;
   width: 450px;
 }
-
-.article1{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  
-}
-.article1 #date, .article2 #date{
-  color: grey;
-  font-size: x-small;
+#footer-btn > button:hover{
+  transform: none;
+  animation: shake 0.5s;
 }
 
-.article1 a, .article2 a,
-.article1 a:visited, .article2 a:visited{
-  color: var(--color-secondary);
+.article1 > a , .article2  > a {
+  color: #FEFEFE;
   text-decoration: none;
   font-size: small;
+  margin-left: 70%;
 }
-#view{
-  position: relative;
-  display: inline;
-  margin-left: 100px;
+ .article1 > a:hover , .article2  > a:hover {
   color: var(--color-secondary);
+  text-decoration: underline;
+ }
+.article{
+ width: calc(60%);
+ height: 260px;
+ padding: 10px;
+ overflow-y: scroll;
 }
-.footer-right .wrapper .underline{
-  position: absolute;
-  bottom: 0px;
-  height: 2px;
-  width: 100%;
+
+.article > div:hover{
+  background-color: #555;
 }
-h5{
-  font-weight: 500;
+
+#date{
+  font-size: x-small;
+  margin: 0;
+}
+
+#view{
+  margin-left: 100px;
+  color: blue;
+  text-decoration: none;
+}
+
+#view:hover{
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.team{
+  background-color: #1E1E1E;
+  height: 48px;
+  padding-inline: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  color: #FEFEFE;
+}
+
+.team > img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+#devs{
+  padding-top: 10px;
+  font-weight: var(--font-weight-bold);
+  color: red;
+}
+
+
+.article::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+.article:hover::-webkit-scrollbar{
+  width: 9px;
+}
+
+
+.article::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.article::-webkit-scrollbar-thumb:hover{
+  background: #555;
 }
