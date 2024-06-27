@@ -265,9 +265,8 @@ button:hover{
   gap: 20px;
   position: relative;
   margin-inline: 100px;
-  top: -50px;
+  top: -70px;
   padding: 30px 45px;
-
   }
 .overlay-txt{
   padding: 80px 20px;
@@ -319,46 +318,45 @@ border: 1px solid green;
   display: flex;
   background-color: #000000;
   color: var(--color-primary-light);
-  position: relative;
   height: 360px;
-  justify-content: baseline;
   padding: 30px 120px;
 }
 .footer-right{
-  width: 450px;
   padding: 30px;
 }
-.footer-right h3{
-  margin-top: -10px;
+
+/* Input */
+.input-boxes{
+  margin-top: 30px;  
 }
-.footer-right .wrapper{
-  height: 40px;
-  width:100%;
+
+.input-boxes .input-box{
+  height: 50px;
+  width: 90%;
+  margin: 10px 0;
   position: relative;
 }
-.footer-right .wrapper input{
+
+.input-box > input{
   height: 100%;
   width: 100%;
-  font-size: 17px;
-  border-bottom: 2px solid silver;
-  color: var(--color-primary-light);
-  background-color: #000000;
-}
-input:valid + label
-{
-  display: none;
-}
-.footer-right, .wrapper, label{
-  position: relative;
-  bottom: 30px;
-  left:0;
-  color: grey;
-}
-.wrapper{
-  padding-top: 50px;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  transition: all 0.3s ease;
 }
 
-
+.input-box input:focus,
+.input-box input:valid{
+  border-color: var(--color-secondary);
+} 
+/* End of input */
 #footer-btn > button{
   background-color: green;
   color: orange;
@@ -389,13 +387,29 @@ input:valid + label
   margin-left: 100px;
   color: var(--color-secondary);
 }
-.footer-right .wrapper .underline{
-  position: absolute;
-  bottom: 0px;
-  height: 2px;
-  width: 100%;
-  border: 1px solid green;
-}
 h5{
   font-weight: 500;
+}
+
+.team{
+  background-color: #1E1E1E;
+  height: 48px;
+  padding-inline: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  color: #FEFEFE;
+}
+
+.team > img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+#devs{
+  padding-top: 10px;
+  font-weight: var(--font-weight-bold);
+  color: red;
 }
