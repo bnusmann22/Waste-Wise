@@ -133,7 +133,7 @@ input{
 #desc{
   width: 50rem;
   padding: 15px;
-  position: relative;
+  position: absolute;
   top: 17rem;
   left: 7.5rem;
   background: #ffffff44;
@@ -147,10 +147,10 @@ input{
   display: block;
 }
 
-#desc.modified{
+/* #desc.modified{
   top: 0rem;
   position: relative;
-}
+} */
 
 @keyframes shake{
   0%, 100%{transform: translateX(0);}
@@ -254,6 +254,7 @@ input{
   font-size: var(--font-size-sm);
 }
 button:hover{
+  cursor: pointer;
   transform: scale(1.1);
   transition: all .3s ease-in;
 }
