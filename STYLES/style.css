@@ -366,30 +366,31 @@ border: 1px solid green;
   width: 450px;
 }
 
-.article1{
-  margin-top: 50px;
-  margin-bottom: 50px;
-
-}
-.article1 #date, .article2 #date{
-  color: grey;
-  font-size: x-small;
-}
-.article1 a, .article2 a,
-.article1 a:visited, .article2 a:visited{
-  color: var(--color-secondary);
+.article1 > a , .article2  > a {
+  color: #FEFEFE;
   text-decoration: none;
   font-size: small;
+  margin-left: 70%;
 }
- 
+ .article1 > a:hover , .article2  > a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+ }
+.article{
+ width: calc(60%);
+ height: 260px;
+ padding: 10px;
+ overflow-y: scroll;
+}
+
+#date{
+  font-size: x-small;
+  margin: 0;
+}
+
 #view{
-  position: relative;
-  display: inline;
   margin-left: 100px;
   color: var(--color-secondary);
-}
-h5{
-  font-weight: 500;
 }
 
 .team{
@@ -413,4 +414,24 @@ h5{
   padding-top: 10px;
   font-weight: var(--font-weight-bold);
   color: red;
+}
+
+.article::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+.article:hover::-webkit-scrollbar{
+  width: 9px;
+}
+
+
+.article::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.article::-webkit-scrollbar-thumb:hover{
+  background: #555;
 }
