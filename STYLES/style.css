@@ -149,6 +149,7 @@ input{
   display: block;
 }
 
+
 /* #desc.modified{
   top: 0rem;
   position: relative;
@@ -176,10 +177,9 @@ input{
 /* End of JS manipulations */
 
 #ntf-txt{
-  width: 20rem;
-  height: 15rem;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 19rem;
+  height: 30rem;
+  padding: 10px 15px 7px 15px;
   position: sticky;
   top: 4.5rem;
   left: 68%;
@@ -195,18 +195,32 @@ input{
  .header-ntf{
   font-weight: 600;
   font-size: 24px;
+  position: static;
+  z-index: 111;
+  background-color: blue;
 }
 .ntf-time{
   color: #58FF2F;
+  font-size: 14px;
 
 }
+.notif{
+  padding-bottom: 7px;
+}
+.notif:hover{
+  background-color: #111C21;
+  border: solid 1px red;
+
+}
+  
 /* Notification scrool bar styles */
 #ntf-txt::-webkit-scrollbar{
   width: 0px;
   height: 0px;
+  margin-top: 10px;
 }
 #ntf-txt:hover::-webkit-scrollbar{
-  width: 9px;
+  width: 3px;
 }
 
 
@@ -214,7 +228,7 @@ input{
   background: #888;
   border-radius: 10px;
   border: 1px solid #ccc;
-  margin-top: 10px;
+  
 }
 
 #ntf-txt::-webkit-scrollbar-thumb:hover{
