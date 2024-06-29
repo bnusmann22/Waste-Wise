@@ -18,7 +18,8 @@ body{
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  background-color: #1E1E1E;
+  background-color: #000000;
+  height: 100vh;
 }
 
 .hero-section{
@@ -114,6 +115,7 @@ ul li a:hover{
   position: absolute;
   border: none;
   padding: 6px;
+  background-color: #313131;
   
   margin: -3px 0 0 -25px ;
   padding-left: 30px;
@@ -174,22 +176,30 @@ input{
 /* End of JS manipulations */
 
 #ntf-txt{
-  width: 12rem;
+  width: 20rem;
   height: 15rem;
-  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   position: sticky;
   top: 4.5rem;
   left: 68%;
   z-index: 100;
   display: none;
-  border-radius: 10px;
-  background: transparent;
-  border: 1px solid red;
+  border-radius: 30px;
+  background: #0B1215;
   backdrop-filter: blur(15px);
   overflow-y: scroll;
   transition: all 2s ease-in;
+  color: #FFFFFF;
 }
+ .header-ntf{
+  font-weight: 600;
+  font-size: 24px;
+}
+.ntf-time{
+  color: #58FF2F;
 
+}
 /* Notification scrool bar styles */
 #ntf-txt::-webkit-scrollbar{
   width: 0px;
@@ -293,7 +303,8 @@ button:hover{
   width: 95px;
   height: 95px;
   position: absolute;
-  top: -50px;
+  bottom: 0;
+  margin-bottom: -25px;
 }
 
 /* Footer Section */
@@ -410,7 +421,7 @@ border: 1px solid green;
 }
 
 .team{
-  background-color: #1E1E1E;
+  background-color: #000000;
   height: 48px;
   padding-inline: 120px;
   display: flex;
