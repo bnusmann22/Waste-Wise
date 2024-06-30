@@ -179,7 +179,7 @@ input{
 #ntf-txt{
   width: 19rem;
   height: 30rem;
-  padding: 10px 15px 7px 15px;
+  padding: 15px 15px 7px 15px;
   position: sticky;
   top: 4.5rem;
   left: 68%;
@@ -197,7 +197,6 @@ input{
   font-size: 24px;
   position: static;
   z-index: 111;
-  background-color: blue;
 }
 .ntf-time{
   color: #58FF2F;
@@ -209,7 +208,6 @@ input{
 }
 .notif:hover{
   background-color: #111C21;
-  border: solid 1px red;
 
 }
   
@@ -220,7 +218,7 @@ input{
   margin-top: 10px;
 }
 #ntf-txt:hover::-webkit-scrollbar{
-  width: 3px;
+  width: 1px;
 }
 
 
