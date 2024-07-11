@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   }
 `
 
-const MOBILE_SCREEN = 500;
+const MOBILE_SCREEN = 992;
 function Hamburger({ isOpen, onHandleClick }) {
 
   const [isMobile, setIsMobile] = useState(()=> window.innerWidth < MOBILE_SCREEN)

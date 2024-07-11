@@ -1,15 +1,18 @@
 import { RiNotification4Fill } from "react-icons/ri";
-
+import styled from "styled-components";
+const StyledNotification = styled.section`
+/* margin-left: auto; */
+`
 function Notification() {
 	return (
-		<section>
+		<StyledNotification>
 			<button>
-				<RiNotification4Fill />
+				<RiNotification4Fill className="text-white"/>
       </button>
       <section>
 
       </section>
-		</section>
+		</StyledNotification>
 	);
 }
 
