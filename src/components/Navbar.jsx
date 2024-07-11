@@ -1,10 +1,10 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Hamburger from "./ui/Hamburger";
-import { useEffect, useState } from "react";
 import Logo from "./ui/Logo";
 import Notification from "./ui/Notification";
-import { Link } from "react-router-dom";
 import Search from "./ui/Search";
+import MenuList from "./ui/MenuList";
 
 const Nav = styled.nav`
 	display: grid;
@@ -27,32 +27,7 @@ const NavContents = styled.section`
 	}
 `;
 
-const MenuList = styled.ul`
-	position: absolute;
-	top: 6em;
-	background-color: #0b1215;
-	display: none;
-	padding: 1em;
-	&.isVisible {
-		display: block;
-	}
-	a {
-		color: #fff;
-	}
-	li + li {
-		margin-top: 1em;
-	}
-	@media (min-width: 992px) {
-		position: static;
-		display: flex;
-		gap: 1em;
-		background-color: transparent;
-		padding: 0em;
-		li + li {
-			margin-top: 0;
-		}
-	}
-`;
+
 const Section = styled.section`
 	display: flex;
 	align-items: center;
@@ -82,25 +57,9 @@ function Navbar() {
 		<Nav>
 			<NavContents>
 				<Hamburger isOpen={isOpen} onHandleClick={handleToggleMenu} />
-				<Logo />
-
-				<MenuList className={isOpen ? "isVisible" : ""}>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/services">Services</Link>
-					</li>
-					<li>
-						<Link to="/about-us">About Us</Link>
-					</li>
-					<li>
-						<Link to="/blog">Blog</Link>
-					</li>
-					<li>
-						<Link to="/contact-us">Contact Us</Link>
-					</li>
-				</MenuList>
+        <Logo />
+        
+				<MenuList />
 
 				<Section>
 					<Notification />

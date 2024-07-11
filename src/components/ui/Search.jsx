@@ -32,7 +32,7 @@ const FormGroup = styled.section`
 `;
 const Input = styled.input`
 	background-color: #313131;
-	padding: 0.5em 2em;
+	padding: 0.5em 2.5em;
 	border-radius: 2em;
 	color: #fff;
 `;
