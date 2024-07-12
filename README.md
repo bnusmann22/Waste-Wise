@@ -43,7 +43,7 @@ To join our project, follow these steps:
 
 7. **Push Changes**: Push your changes to your forked repository:
    ```bash
-   git push origin feature-name
+   git push --set-upstream origin feature-name
    ```
 
 8. **Submit Pull Request**: Go to your forked repository on GitHub and click on the "Compare & pull request" button next to your recently pushed branch. Provide a descriptive title and details of your changes, then click "Create pull request".
