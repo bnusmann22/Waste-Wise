@@ -24,6 +24,8 @@ const NavContents = styled.section`
 
 	@media (min-width: 992px) {
 		justify-content: space-between;
+		padding: 1em 0;
+
 	}
 `;
 
