@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { IoSearch } from "react-icons/io5";
 import Hamburger from "./ui/Hamburger";
-import { useState } from "react";
 import Logo from "./ui/Logo";
 import Notification from "./ui/Notification";
+import Search from "./ui/Search";
+import MenuList from "./ui/MenuList";
 
 const Nav = styled.nav`
 	display: grid;
@@ -16,10 +17,28 @@ const NavContents = styled.section`
 	grid-column: 2;
 	grid-row: 1;
 	display: flex;
-  align-items: center;
+	align-items: center;
 	gap: 1em;
 	padding: 1.5em 0;
+	position: relative;
+
+	@media (min-width: 992px) {
+		justify-content: space-between;
+	}
 `;
+
+
+const Section = styled.section`
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-left: auto;
+
+	@media (min-width: 992px) {
+		margin-left: 0;
+	}
+`;
+
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -27,20 +46,25 @@ function Navbar() {
 		setIsOpen(!isOpen);
 	}
 
+	useEffect(() => {
+		function handleResize() {
+			setIsOpen(false);
+		}
+
+		window.addEventListener("resize", handleResize);
+	}, []);
 	return (
 		<Nav>
 			<NavContents>
 				<Hamburger isOpen={isOpen} onHandleClick={handleToggleMenu} />
         <Logo />
         
-        <ul>
+				<MenuList isOpen={isOpen} />
 
-        </ul>
-
-				<section>
+				<Section>
 					<Notification />
-					<IoSearch />
-				</section>
+					<Search />
+				</Section>
 			</NavContents>
 		</Nav>
 	);
