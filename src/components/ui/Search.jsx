@@ -24,7 +24,7 @@ const FormGroup = styled.section`
 		display: block;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 992px) {
 		display: block;
 		position: relative;
 		top: 0;
@@ -40,7 +40,7 @@ const SearchIcon = styled(IoSearch)`
 	color: #fff;
 `;
 
-const SCREEN_SIZE = 768;
+const SCREEN_SIZE = 992;
 function Search() {
 	const [isVisible, setIsVisible] = useState(() => window.innerWidth < SCREEN_SIZE);
 	const [isOpen, setIsOpen] = useState(false)

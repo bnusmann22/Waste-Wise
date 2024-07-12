@@ -3,35 +3,44 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledMenuList = styled.ul`
+width: 15em;
 	position: absolute;
 	top: 6em;
 	background-color: #0b1215;
 	display: none;
-	padding: 1em;
 	&.isVisible {
 		display: block;
 	}
 	a {
 		color: #fff;
-    padding: 1em 0;
+    padding: 1em;
     border-bottom: 1px solid transparent;
+
+    display: block;
 
 	}
   a.active {
-    border-bottom: 2px solid #0f0;
+    border-left: 3px solid #0f0;
   }
-	li + li {
-		margin-top: 1em;
-	}
+
 	@media (min-width: 992px) {
 		position: static;
 		display: flex;
 		gap: 1em;
 		background-color: transparent;
 		padding: 0em;
-		li + li {
-			margin-top: 0;
-		}
+    width: initial;
+
+    a {
+    padding: 1em 0;
+
+  }
+    a.active {
+    border-bottom: 2px solid #0f0;
+    border-left: 0;
+    padding: 1em 0;
+
+  }
 	}
 `;
 function MenuList({isOpen}) {

@@ -59,7 +59,7 @@ function Navbar() {
 				<Hamburger isOpen={isOpen} onHandleClick={handleToggleMenu} />
         <Logo />
         
-				<MenuList />
+				<MenuList isOpen={isOpen} />
 
 				<Section>
 					<Notification />

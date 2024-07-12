@@ -11,7 +11,14 @@ padding: 1em;
 min-height: 10em;
 position: absolute;
 top: 6em;
+right: 0;
 color: #fff;
+
+@media (min-width: 992px) {
+top: 8em;
+min-width: 320px;
+
+	}
 `
 function Notification() {
 	const [showNotifications, setShowNotifications] = useState(false);
