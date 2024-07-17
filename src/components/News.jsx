@@ -1,5 +1,3 @@
-import React from "react";
-
 const NewsCard1 = () => {
   return (
     <article className="border-b border-[#676767] py-6">
