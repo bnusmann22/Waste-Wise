@@ -31,4 +31,4 @@ const NewsSection = () => {
   );
 };
 
-export default App;
+export default NewsSection;
